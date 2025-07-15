@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tienda USC</title>
-  <link rel="icon" href="https" type="image/svg+xml" />
+  <link rel="icon" href="https://www.usc.edu.co/wp-content/uploads/2019/02/USCLOGO.png" type="image/svg+xml" />
   <script src="https://cdn.tailwindcss.com"></script>
 
 
@@ -16,7 +16,7 @@
 <!-- HEADER -->
 <header class="sticky top-0 z-[999] bg-black/20 backdrop-blur text-[#00FFFF] p-4 flex flex-col md:flex-row justify-between items-center">
   <!-- Logo -->
-  <img src="kkk" alt="Logo USC" class="w-[60%] md:w-[20%] p-3 md:mb-0" />
+  <img src="https://www.usc.edu.co/wp-content/uploads/2019/02/USCLOGO.png" alt="Logo USC" class="w-20 p-3 md:mb-0" />
 
   <!-- Botón toggle (visible solo en móviles) -->
   <button id="menuToggle" class="md:hidden text-white focus:outline-none" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMenu">
@@ -28,15 +28,15 @@
   <!-- NAV -->
   <nav id="navMenu" class="hidden md:flex gap-6 text-white font-semibold flex-wrap justify-center mt-4 md:mt-0">
     <a href="#inicio" class="group relative">
-      <span class="hover:text-[#00004F] transition">Carrito</span>
+      <span class="hover:text-white transition">Carrito</span>
       <span class="absolute left-0 -bottom-1 w-0 h-[3px] bg-[#00FFFF] transition-all duration-300 group-hover:w-full"></span>
     </a>
     <a href="#quienes" class="group relative">
-      <span class="hover:text-[#00004F] transition">Favoritos</span>
+      <span class="hover:text-white transition">Favoritos</span>
       <span class="absolute left-0 -bottom-1 w-0 h-[3px] bg-[#00FFFF] transition-all duration-300 group-hover:w-full"></span>
     </a>
     <a href="#planes" class="group relative">
-      <span class="hover:text-[#00004F] transition">Iniciar Sesión</span>
+      <span class="hover:text-white transition">Iniciar Sesión</span>
       <span class="absolute left-0 -bottom-1 w-0 h-[3px] bg-[#00FFFF] transition-all duration-300 group-hover:w-full"></span>
     </a>
   </nav>
@@ -45,20 +45,43 @@
 <main> 
 <section class="header bg-[#00457C] text-white p-8 text-center">
   <h1 class="text-4xl md:text-6xl font-bold mb-4">Bienvenido a la Tienda USC</h1>
-  <p class="text-lg md:text-xl">Explora nuestros productos y ofertas exclusivas</p|>
+  <p class="text-lg md:text-xl">Explora nuestros productos y ofertas exclusivas</p>
 </section>
-<section class="carrusel">
+<section class="carrusel bg-white justify-center items-center p-8">
+  <div class="carousel">
 <h1>Principales Novedades</h1>
-<div class="card-container">
-  <div class="card">
-    <img src="https://via.placeholder.com/150" alt="Producto 1" class="w-full h-48 object-cover mb-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+  <!-- Card Producto -->
+  <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+    <img src="https://via.placeholder.com/150" alt="Producto 1" class="w-full h-48 object-cover mb-4 rounded">
     <h2 class="text-xl font-semibold">Producto 1</h2>
-    <p class="text-gray-600">$19.99</p>
-    <button class="bg-[#00FFFF] text-black px-4 py-2 mt-2 rounded hover:bg-[#00004F] transition">Añadir al carrito</button>
+    <p class="text-gray-700">$19.900</p>
+    <button class="bg-[#00FFFF] text-black px-4 py-2 mt-3 rounded hover:bg-[#00004F] hover:text-white transition">Añadir al carrito</button>
   </div>
+  <!-- Repite para más productos -->
+     <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+    <img src="https://via.placeholder.com/150" alt="Producto 1" class="w-full h-48 object-cover mb-4 rounded">
+    <h2 class="text-xl font-semibold">Producto 1</h2>
+    <p class="text-gray-700">$19.900</p>
+    <button class="bg-[#00FFFF] text-black px-4 py-2 mt-3 rounded hover:bg-[#00004F] hover:text-white transition">Añadir al carrito</button>
+  </div>
+    <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+    <img src="https://via.placeholder.com/150" alt="Producto 1" class="w-full h-48 object-cover mb-4 rounded">
+    <h2 class="text-xl font-semibold">Producto 1</h2>
+    <p class="text-gray-700">$19.900</p>
+    <button class="bg-[#00FFFF] text-black px-4 py-2 mt-3 rounded hover:bg-[#00004F] hover:text-white transition">Añadir al carrito</button>
+  </div>
+  
 </div>
 </section>
 <section>
   <h1></h1>
 </section>
 </main>
+<footer>
+  <h1 class="text-center text-white bg-[#00457C] p-4">
+    © 2025
+   Tienda USC. Todos los derechos reservados.</h1>
+</footer>
+</body>
+</html>
