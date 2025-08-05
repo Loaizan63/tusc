@@ -61,13 +61,13 @@
     <div id="default-carousel" class="relative w-full max-w-5xl mx-auto" data-carousel="slide">
       <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://acreditacion.usc.edu.co/wp-content/uploads/2024/05/Bloque-2.jpg" class="absolute block w-full h-full object-cover" />
+          <img src="https://acreditacion.usc.edu.co/wp-content/uploads/2024/05/Bloque-2.jpg" alt="bloque"class="absolute block w-full h-full object-cover" />
         </div>
         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-          <img src="https://acreditacion.usc.edu.co/wp-content/uploads/2024/05/Tienda-Santiaguina-3.jpg" class="absolute block w-full h-full object-cover" />
+          <img src="https://acreditacion.usc.edu.co/wp-content/uploads/2024/05/Tienda-Santiaguina-3.jpg"alt="bloque" class="absolute block w-full h-full object-cover" />
         </div>
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://tse1.mm.bing.net/th/id/OIP.CZU7FBrv1Mge_YAoYULQzAHaEc" class="absolute block w-full h-full object-cover" />
+          <img src="https://tse1.mm.bing.net/th/id/OIP.CZU7FBrv1Mge_YAoYULQzAHaEc"  alt="bloque"class="absolute block w-full h-full object-cover" />
         </div>
       </div>
 
@@ -107,12 +107,69 @@
     <p class="text-gray-600">Próximamente...</p>
   </section>
 </main>
+<!-- FOOTER USC -->
+<footer id="contacto" class="bg-[#002f56] text-white py-12 px-6 font-sans">
+  <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto text-center md:text-left">
+    
+    <!-- Columna 1: Logo y descripción -->
+    <div class="flex flex-col items-center md:items-start">
+      <img src="https://www.usc.edu.co/wp-content/uploads/2019/02/USCLOGO.png" alt="Logo USC" class="w-40 mb-4" />
+      <h3 class="text-xl font-bold mb-3 text-[#f3ca24]">Tienda Santiaguina</h3>
+      <p class="text-sm leading-relaxed text-gray-200 max-w-md">
+        Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional.<br>
+        Personería jurídica otorgada por el Ministerio de Justicia mediante la Resolución No. 2.800 del 02 de septiembre de 1959.<br>
+        Reconocida como Universidad por el Decreto No. 1297 de 1964 emanado del Ministerio de Educación Nacional.
+      </p>
+    </div>
 
-<!-- FOOTER -->
-<footer class="text-center justify-between flex-col text-white bg-[#002f56] p-4">
-  <img src="https://www.usc.edu.co/wp-content/uploads/2019/02/USCLOGO.png" alt="Logo USC" class="w-40 pl-10 md:mb-0" />
-  © 2025 Tienda USC. Todos los derechos reservados.
+    <!-- Columna 2: Formulario de contacto -->
+    <div class="flex flex-col items-center md:items-start">
+      <h3 class="text-xl font-bold mb-4 text-[#f3ca24]">Contáctanos</h3>
+      <form id="contactForm" class="flex flex-col gap-3 w-full max-w-sm" method="post">
+        <input type="text" name="nombre" placeholder="Tu nombre" required class="p-3 rounded bg-white text-black w-full" />
+        <input type="email" name="correo" placeholder="Tu correo" required class="p-3 rounded bg-white text-black w-full" />
+        <textarea name="mensaje" rows="2" placeholder="Tu mensaje..." required class="p-3 rounded bg-white text-black w-full"></textarea>
+
+        <button id="btnEnviar" type="submit" class="bg-[#f3ca24] justify-center text-[#002f56] font-bold p-3 rounded hover:bg-white transition flex items-center gap-2">
+          <span id="btnText">Enviar</span>
+          <svg id="spinner" class="w-5 h-5 animate-spin hidden" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="#002f56" stroke-width="4"></circle>
+            <path class="opacity-75" fill="#002f56" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 100 16v-4l-3 3 3 3v-4a8 8 0 01-8-8z"></path>
+          </svg>
+        </button>
+
+        <p id="respuesta" class="text-sm mt-2 text-gray-200"></p>
+      </form>
+    </div>
+
+    <!-- Columna 3: Información de sedes -->
+    <div class="flex flex-col items-center md:items-start">
+      <h3 class="text-xl font-bold mb-4 text-[#f3ca24]">Nuestras Sedes</h3>
+      <p class="text-sm text-gray-200 leading-relaxed">
+        <span class="font-bold">Ciudadela Pampalinda</span><br>
+        Calle 5 # 62-00 Barrio Pampalinda<br>
+        PBX: +57 (602) 518 3000<br>
+        Santiago de Cali, Valle del Cauca<br><br>
+
+        <span class="font-bold">Sede Centro</span><br>
+        Carrera 8 # 8-17 Barrio Santa Rosa<br>
+        PBX: +57 (602) 518 3000<br>
+        Santiago de Cali, Valle del Cauca<br><br>
+
+        <span class="font-bold">Seccional Palmira</span><br>
+        Carrera 29 # 38-47 Barrio Alfonso López<br>
+        PBX: +57 (602) 284 4006<br>
+        Palmira, Valle del Cauca
+      </p>
+    </div>
+  </div>
+
+  <!-- Derechos reservados -->
+  <div class="text-center text-sm mt-10 text-gray-400">
+    &copy; 2025 Universidad Santiago de Cali. Todos los derechos reservados.
+  </div>
 </footer>
+
 
 </body>
 </html>
