@@ -91,29 +91,83 @@
     </div>
   </section>
 
-  <!-- SECCIONES DE PRODUCTO (vacías por ahora) -->
   <section id="hombres" class="p-10 bg-white text-center">
-    <h2 class="text-3xl font-bold mb-4 text-[#00457C]">Ropa para Hombres</h2>
-    <p class="text-gray-600">Próximamente...</p>
-  </section>
+  <h2 class="text-3xl font-bold mb-8 text-[#00457C]">Ropa para Hombres</h2>
 
-  <section id="mujeres" class="p-10 bg-gray-50 text-center">
-    <h2 class="text-3xl font-bold mb-4 text-[#00457C]">Ropa para Mujeres</h2>
-    <p class="text-gray-600">Próximamente...</p>
-  </section>
+  <!-- Grid de Flipcards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
+    
+    <!-- Flip Card 1 -->
+    <div class="group [perspective:1000px] w-64 h-80">
+      <div class="relative w-full h-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+        
+        <!-- Front Side -->
+        <div class="absolute w-full h-full [backface-visibility:hidden] overflow-hidden rounded-xl shadow-lg">
+          <img src="https://static.vecteezy.com/system/resources/previews/012/628/220/non_2x/plain-black-t-shirt-on-transparent-background-free-png.png" alt="Producto" class="w-full h-full object-cover" />
+        </div>
 
-  <section id="accesorios" class="p-10 bg-white text-center">
-    <h2 class="text-3xl font-bold mb-4 text-[#00457C]">Accesorios</h2>
-    <p class="text-gray-600">Próximamente...</p>
-  </section>
+        <!-- Back Side -->
+        <div class="absolute w-full h-full bg-white rounded-xl shadow-lg [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col items-center justify-center p-4">
+          <h3 class="text-lg font-bold mb-2">Camisa Casual</h3>
+          <p class="text-gray-600 mb-4">$120.000</p>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+            Comprar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 2 -->
+    <div class="group [perspective:1000px] w-64 h-80">
+      <div class="relative w-full h-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+        
+        <!-- Front Side -->
+        <div class="absolute w-full h-full [backface-visibility:hidden] overflow-hidden rounded-xl shadow-lg">
+          <img src="https://www.pngarts.com/files/1/Slim-Fit-Jean-Transparent-Image.png" alt="Producto" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Back Side -->
+        <div class="absolute w-full h-full bg-white rounded-xl shadow-lg [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col items-center justify-center p-4">
+          <h3 class="text-lg font-bold mb-2">Pantalón Jeans</h3>
+          <p class="text-gray-600 mb-4">$150.000</p>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+            Comprar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 3 -->
+    <div class="group [perspective:1000px] w-64 h-80">
+      <div class="relative w-full h-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+        
+        <!-- Front Side -->
+        <div class="absolute w-full h-full [backface-visibility:hidden] overflow-hidden rounded-xl shadow-lg">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.B0hv6VQqit2mB1rn5XfW4gHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Producto" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Back Side -->
+        <div class="absolute w-full h-full bg-white rounded-xl shadow-lg [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col items-center justify-center p-4">
+          <h3 class="text-lg font-bold mb-2">Chaqueta Deportiva</h3>
+          <p class="text-gray-600 mb-4">$220.000</p>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+            Comprar
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 </main>
 <!-- FOOTER USC -->
-<footer id="contacto" class="bg-[#002f56] text-white py-12 px-6 font-sans">
+<footer id="contacto" class="bg-[#182039] text-white py-12 px-6 font-sans">
   <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto text-center md:text-left">
     
     <!-- Columna 1: Logo y descripción -->
     <div class="flex flex-col items-center md:items-start">
-      <img src="https://www.usc.edu.co/wp-content/uploads/2019/02/USCLOGO.png" alt="Logo USC" class="w-40 mb-4" />
+      <img src="https://www.usc.edu.co/wp-content/uploads/2023/03/Logo_Universidad_Santiago_de_Cali_USC-1.png" alt="Logo USC" class="w-40 mb-4" />
       <h3 class="text-xl font-bold mb-3 text-[#f3ca24]">Tienda Santiaguina</h3>
       <p class="text-sm leading-relaxed text-gray-200 max-w-md">
         Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional.<br>
