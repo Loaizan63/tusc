@@ -39,7 +39,7 @@
   <path fill-rule="evenodd" clip-rule="evenodd" d="M45 29.38C40.31 23.91 32.48 22.23 26.61 27.23C20.74 32.23 19.91 40.59 24.53 46.5C28.36 51.42 39.96 61.79 43.76 65.15C44.19 65.52 44.4 65.71 44.65 65.79C44.87 65.85 45.1 65.85 45.32 65.79C45.57 65.71 45.78 65.52 46.21 65.15C50.01 61.79 61.61 51.42 65.44 46.5C70.05 40.59 69.33 32.18 63.36 27.23C57.38 22.28 49.69 23.91 45 29.38Z" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a>
-    <a href="#planes" class="hover:text-[#f3ca24] transition"><svg class="w-12 h-12 text-black hover:text-[#00FFFF] transition-transform duration-200 hover:scale-110" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 54" role="img" aria-label="Perfil de usuario">
+    <a href="#planes" class="hover:text-[#f3ca24] transition"><svg class="w-8 h-12 text-black hover:text-[#00FFFF] transition-transform duration-200 hover:scale-110" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 54" role="img" aria-label="Perfil de usuario">
   <title>Perfil</title>
   <path fill-rule="evenodd" clip-rule="evenodd" d="M44.56 48.41H9.44C7.55 48.41 6.15 46.54 6.87 44.83C10.17 36.9 17.95 32.35 27 32.35C36.06 32.35 43.83 36.9 47.14 44.83C47.85 46.54 46.45 48.41 44.56 48.41ZM16.07 16.3C16.07 10.39 20.98 5.59 27 5.59C33.03 5.59 37.93 10.39 37.93 16.3C37.93 22.2 33.03 27 27 27C20.98 27 16.07 22.2 16.07 16.3ZM53.64 47.43C51.66 38.45 45.44 31.81 37.27 28.8C41.6 25.38 44.13 19.86 43.2 13.81C42.12 6.79 36.16 1.17 28.97 0.35C19.03 -0.78 10.61 6.79 10.61 16.3C10.61 21.35 13 25.86 16.73 28.8C8.55 31.81 2.35 38.45 0.36 47.43C-0.36 50.7 2.32 53.76 5.74 53.76H48.26C51.68 53.76 54.37 50.7 53.64 47.43Z" fill="currentColor"/>
 </svg>
@@ -55,42 +55,100 @@
   </section>
 
   <!-- CARRUSEL -->
-  <section class="bg-white py-10 px-6 text-center">
-    <h2 class="text-3xl font-bold mb-6 text-[#00457C]">Principales Novedades</h2>
+  <section class="bg-white py-10  text-center">
 
-    <div id="default-carousel" class="relative w-full max-w-5xl mx-auto" data-carousel="slide">
-      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://acreditacion.usc.edu.co/wp-content/uploads/2024/05/Bloque-2.jpg" alt="bloque"class="absolute block w-full h-full object-cover" />
+<div id="default-carousel" class="relative w-full max-w-screen mx-auto mb-0" data-carousel="slide">
+
+  <!-- Contenedor de imágenes -->
+  <div class="relative overflow-hidden rounded-lg h-[400px] md:h-[600px]">
+          <h2 class="text-3xl font-bold text-[#00457C] z-10 relative ">Principales Novedades</h2>
+    <!-- Item 1 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="https://acreditacion.usc.edu.co/wp-content/uploads/2024/05/Bloque-2.jpg" 
+           alt="Bloque 2" 
+           class="absolute w-full h-full object-cover" />
+    </div>
+
+    <!-- Item 2 (activo) -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+      <img src="https://acreditacion.usc.edu.co/wp-content/uploads/2024/05/Tienda-Santiaguina-3.jpg"
+           alt="Tienda Santiaguina"
+           class="absolute w-full h-full object-cover" />
+    </div>
+
+    <!-- Item 3 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="https://tse1.mm.bing.net/th/id/OIP.CZU7FBrv1Mge_YAoYULQzAHaEc"
+           alt="Bloque 3"
+           class="absolute w-full h-full object-cover" />
+    </div>
+  </div>
+
+  <!-- Indicadores -->
+  <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+    <button type="button" class="w-3 h-3 rounded-full bg-white/60" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+    <button type="button" class="w-3 h-3 rounded-full bg-white/60" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+    <button type="button" class="w-3 h-3 rounded-full bg-white/60" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+  </div>
+
+  <!-- Controles -->
+  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
+      <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+    </span>
+  </button>
+  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
+      <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </span>
+  </button>
+</div>
+
+  </section>
+<!-- BOTONES DE CATEGORÍAS -->
+  <section class="py-10 text-center bg-[#00457C] text-white">
+    <div class="flex flex-col md:flex-row gap-6 justify-center">
+    <div class="bg-[#00457C] ">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold -mb-20 sm:text-3xl">Explora por Categoría</h2>
+      <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+        <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:space-y-0 lg:gap-x-6">
+          <div class="group relative">
+           <img src="https://img1.wsimg.com/isteam/ip/db3f7941-2fe6-46be-91a2-3e0d14d00dce/principal.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25" alt="" class="w-full rounded-lg bg-white object-cover group-hover:opacity-75 max-sm:h-80 sm:aspect-2/1 lg:aspect-square" />
+            <h3 class="bg-[#00FFFF] hover:bg-[#00cccc] text-[#00457C] font-semibold py-3 px-6 rounded-full shadow-md transition text-center mt-3">
+              <a href="/categorias/sports.html">
+                <span class="absolute inset-0 "></span>
+                Ropa Deportiva
+              </a>
+            </h3>
+          </div>
+          <div class="group relative">
+          <img src="https://yucenuniformes.com/cdn/shop/files/Mesa_de_trabajo_2_1920x.svg?v=1701272195" alt="" class="w-full rounded-lg bg-white object-cover group-hover:opacity-75 max-sm:h-80 sm:aspect-2/1 lg:aspect-square" />
+          <h3 class="bg-[#00FFFF] hover:bg-[#00cccc] text-[#00457C] font-semibold py-3 px-6 rounded-full shadow-md transition text-center mt-3">
+            <a href="/categorias/uniforms.html">
+              <span class="absolute inset-0"></span>
+              Uniformes
+            </a>
+          </h3>
         </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-          <img src="https://acreditacion.usc.edu.co/wp-content/uploads/2024/05/Tienda-Santiaguina-3.jpg"alt="bloque" class="absolute block w-full h-full object-cover" />
-        </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://tse1.mm.bing.net/th/id/OIP.CZU7FBrv1Mge_YAoYULQzAHaEc"  alt="bloque"class="absolute block w-full h-full object-cover" />
+        <div class="group relative">
+          <img src="https://down-co.img.susercontent.com/file/e0931f36b0d18c2c45f730a1964f6f81" alt="" class="w-full rounded-lg bg-white object-cover group-hover:opacity-75 max-sm:h-80 sm:aspect-2/1 lg:aspect-square" />
+          <h3 class="bg-[#00FFFF] hover:bg-[#00cccc] text-[#00457C] font-semibold py-3 px-6 rounded-full shadow-md transition text-center mt-3">
+            <a href="./categorias/accesorios.html">
+              <span class="absolute inset-0"></span>
+              Accesorios
+              </a>
+            </h3>
+          </div>
         </div>
       </div>
-
-      <!-- BOTONES -->
-      <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 group-hover:bg-black/50 text-white text-xl">‹</span>
-      </button>
-      <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 group-hover:bg-black/50 text-white text-xl">›</span>
-      </button>
     </div>
-  </section>
-
-  <!-- BOTONES DE CATEGORÍAS -->
-  <section class="py-10 text-center bg-[#00457C] text-white">
-    <h2 class="text-3xl font-bold mb-6">Explora por Categoría</h2>
-    <div class="flex flex-col md:flex-row gap-6 justify-center">
-      <a href="/categorias/hombres.html" class="bg-[#00FFFF] hover:bg-[#00cccc] text-[#00457C] font-semibold py-3 px-6 rounded-full shadow-md transition">Ropa para Hombres</a>
-      <a href="/categorias/mujeres.html" class="bg-[#00FFFF] hover:bg-[#00cccc] text-[#00457C] font-semibold py-3 px-6 rounded-full shadow-md transition">Ropa para Mujeres</a>
-      <a href="/categorias/accesorios.html" class="bg-[#00FFFF] hover:bg-[#00cccc] text-[#00457C] font-semibold py-3 px-6 rounded-full shadow-md transition">Accesorios</a>
-    </div>
-  </section>
-
+  </div>
+</section>
   <section id="hombres" class="p-10 bg-white text-center">
   <h2 class="text-3xl font-bold mb-8 text-[#00457C]">Ropa para Hombres</h2>
 
@@ -116,6 +174,7 @@
         </div>
       </div>
     </div>
+
 
     <!-- Flip Card 2 -->
     <div class="group [perspective:1000px] w-64 h-80">
